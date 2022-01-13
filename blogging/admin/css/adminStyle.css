@@ -1,0 +1,253 @@
+/* start global */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #72A0C1;
+}
+/* end global */
+/* start header */
+.pageHeader{
+    background-color: #72A0C1;
+    height: 50px;
+ 
+
+
+}
+
+.pageHeader h1{
+    float: left;
+    margin: 0 20px;
+}
+/* nav{
+    
+} */
+.pageHeader nav ul{
+    padding: 11px 0;
+    list-style-type: none;
+    overflow: hidden;
+    /* height: 100px; */
+}
+
+.pageHeader nav ul li{
+    display: inline-block;
+}
+
+.pageHeader nav ul li a{
+    padding: 11px;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.pageHeader nav ul li a:hover{
+    background-color: #00FFFF;
+    font-weight: bold;
+}
+
+.pageHeader nav ul li::after{
+    content: " |";
+}
+
+nav ul li:last-child::after{
+    content: "";
+}
+/* .pageHeader nav ul li:last-child{
+    background-color: #7CB9E8; 
+    content: "";
+}
+.pageHeader nav ul li:last-child:hover{
+    background-color: #7CB9E8;
+} */
+.login_button a{
+    background-color: #7CB9E8;
+    border-radius: 25px;
+    text-align: center;
+    margin-right: 50px;
+    margin-top: 10px;
+    padding: 100px;
+}
+.login_button a:hover{
+    background-color: #00FFFF;
+}
+
+/* start header */
+/* start asid */
+aside{
+    background-color: #4682B4;
+    width: 15%;
+    height: 400px;
+    position: fixed;
+    z-index: 1;
+    top: 100;
+    left: 0;
+    overflow-x: hidden;
+    float: left;
+}
+aside nav h2{
+    padding-left: 20px;
+}
+aside nav div button{
+    padding: 10px;
+    width: 100px;
+    background-color: #72A0C1;
+    border: none;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: left;
+    margin: 10px;
+}
+aside nav div button:hover{
+    background-color:  #00FFFF;
+}
+aside nav ul{
+    padding: 0 15px;
+    list-style-type: none;
+    display: none;
+}
+aside nav ul li{
+    padding: 10px 0;
+    width: 120px;
+    background-color: 72A0C1;
+}
+aside nav ul li a{    
+    padding: 5px;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+aside nav ul li a:hover{    
+    padding: 5px;
+    color: black;
+    text-decoration: none;
+    background-color: white;
+}
+
+/* end asid */
+
+/* start main content */
+.main-content{
+    width: 85%;
+    background-color: #87CEEB;
+    padding: 20px;
+    float: right;
+}
+
+.main-content h2{
+    text-align: center;
+    background-color: blue;
+    padding: 10px;
+}
+/* start main content */
+
+/* start add-blog */
+/* .add-blog, .view-blog, .add-cat, .view-cat, .view-tag{
+    
+}
+.add-blog h2, .view-blog h2, .add-cat h2, .view-cat h2, .view-tag h2{
+    
+} */
+
+.main-content .input{
+    margin: 10px;
+    width: 300px;
+    padding: 10px;
+    border: 1px solid blue;
+    border-radius: 10px;
+}
+/* end add-blog */
+
+/* start view-blog */
+
+.main-content table{
+    margin-top: 20px;
+}
+.main-content table td, th {
+    height: 40px;
+    border-bottom: 1px solid #AFEEEE;
+    padding: 5px;
+}
+.main-content table th {
+    background-color: #4169E1;
+}
+.main-content tr{
+    background-color: #f2f2f2;
+}
+.main-content table td a{
+    text-decoration: none;
+    font-weight: bold;
+}
+/* end view-blog */
+
+/* add category */
+.view-cat table td,th {
+    height: 40px;
+    border-bottom: 1px solid #AFEEEE;
+    padding: 5px;
+}
+.view-cat table th {
+    background-color: #4169E1;
+}
+.view-cat table td a{
+    text-decoration: none;
+    font-weight: bold;
+}
+.view-cat tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* end category */
+
+/* add tag */
+.view-tag table td,th{
+    height: 40px;
+    border-bottom: 1px solid #AFEEEE;
+    padding: 5px;
+}
+.view-tag table th {
+    background-color: #4169E1;
+}
+.view-tag table td a{
+    text-decoration: none;
+    font-weight: bold;
+}
+.view-tag tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* end tag */
+
+/* start articale class : main */
+
+article{
+    width: 85%;
+    background-color: grey;
+    height: 100px;
+    float: left;
+}
+.clearfolat{
+    clear: both;
+}
+
+table{
+    width: 100%;
+}
+
+/* end articale class : main */
+
+/* start footer*/
+
+footer{
+    clear: both;
+    background-color: #72A0C1;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+/* end footer*/
